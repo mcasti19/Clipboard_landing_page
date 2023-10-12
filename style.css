@@ -1,0 +1,393 @@
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+
+    --padding-container: 80px 0;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero {
+    --padding-container: 120px 0 80px;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.hero__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4.5em;
+}
+
+.hero__title {
+    color: var(--grayish-blue);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    /* border: 1px solid; */
+    text-align: center;
+    /* width: 75%; */
+}
+
+.hero__paragraph {
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+
+
+.buttons {
+    margin-top: 2.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+}
+
+.buttons__cta {
+    background-color: var(--strong-cyan);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2em;
+    font-weight: 600;
+    padding: 1em 0;
+    box-shadow: 0px -2px 0px 1px #1e92804a inset;
+}
+
+.buttons__cta__blue {
+    box-shadow: 0 0 10px -5px var(--light-blue);
+    background-color: var(--light-blue);
+    box-shadow: 0px -2px 0px 1px #4050cc inset;
+}
+
+.buttons__cta:hover {
+    background-color: #24ceb5;
+}
+
+.buttons__cta__blue:hover {
+    background-color: #7a89f9;
+}
+
+/* track */
+
+.track__texts {
+    text-align: center;
+}
+
+.title {
+    color: var(--dark-grayish-blue);
+    font-size: 2rem;
+}
+
+.paragraph {
+    line-height: 1.5;
+    color: var(--grayish-blue);
+    margin-top: 1.5em;
+}
+
+.track__img {
+    width: 100%;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 3.5em;
+}
+
+.track__articles {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.track__offer {
+    color: var(--dark-grayish-blue);
+    font-size: 1.5rem;
+}
+
+.track__copy {
+    margin-top: .7em;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
+
+/* CLIPBOARD*/
+
+.clipboard {
+    text-align: center;
+}
+
+.clipboard__picture {
+    margin: 3em 0 6em;
+}
+
+.clipboard__img {
+    width: 100%;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.clipboard__offer {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+}
+
+.clipboard__icon {
+    display: block;
+    width: 45px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+
+.clipboard__title {
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+}
+
+.clipboard__paragraph {
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    margin-top: 1em;
+}
+
+/*BRANDS*/
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5em;
+    align-items: center;
+}
+
+/*ACTION*/
+
+.action {
+    text-align: center;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #f2f2f2;
+}
+
+.footer__img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer__links {
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.footer__icon {
+    display: block;
+}
+
+@media (width > 767px) {
+    .hero {
+        --padding-container: 120px 0 90px;
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .buttons {
+        margin-top: 3em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons__cta {
+        padding: 1em 4.5em;
+    }
+
+    .buttons__cta__blue {
+        box-shadow: 0 0 10px -5px var(--light-blue);
+        background-color: var(--light-blue);
+    }
+
+    /*TRACK*/
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .track {
+        --padding-container: 80px 0 0;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .track__texts {
+        width: 90%;
+        margin: 0 auto;
+        /* margin-bottom: .5em; */
+    }
+
+    .track__picture {
+        position: relative;
+        width: 50%;
+        /* overflow: hidden; */
+        height: 700px;
+    }
+
+    .track__img {
+        width: 125%;
+        max-width: 650px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+
+    }
+
+    .track__articles {
+        width: 33%;
+        gap: 3em;
+        margin: 0 auto;
+        text-align: left;
+        align-self: center;
+    }
+
+    .track__offer {
+        color: var(--dark-grayish-blue);
+        font-size: 1.5rem;
+    }
+
+    .track__copy {
+        margin-top: .7em;
+        line-height: 1.5;
+        color: var(--grayish-blue);
+    }
+
+    /* CLIPBOARD*/
+
+    .clipboard {
+        --padding-container: 20px 0 0;
+    }
+
+    .clipboard__img {
+        max-width: 850px;
+    }
+
+    .clipboard__offer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+        align-items: baseline;
+    }
+
+    .clipboard__item {
+        flex: 1;
+    }
+
+
+    /*BRANDS*/
+
+    .brand {
+        margin-top: 4.5em;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .brand__img {
+        min-width: 100px;
+        max-width: 130px;
+        flex: 1;
+    }
+
+    /*ACTION*/
+
+    .action.container>.paragraph {
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    /*FOOTER*/
+
+    .footer__container {
+        --padding-container: 30px 0;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .footer__img {
+        width: 70px;
+        margin-right: 4.5em;
+
+    }
+
+    .footer__links {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    .footer__link {
+        width: 28%;
+    }
+
+    .footer__social {
+        margin-left: auto;
+    }
+
+    .footer__icon {
+        display: block;
+    }
+
+
+
+
+}
